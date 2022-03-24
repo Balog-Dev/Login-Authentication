@@ -82,6 +82,17 @@
  
  
      let obj = [ ];
+
+     function signUp() {
+       
+       obj.push({user_name: username.value, mail: email.value, Pword: password.value})
+       localStorage.setItem("data", JSON.stringify(obj));
+  
+  
+     
+      }
+  
+ 
  
 
 </script>
