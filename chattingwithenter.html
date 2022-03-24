@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"  onmousemove="trigger(event)">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat with enter </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap-5.1.1-dist/css/bootstrap.css">
+
+</head>
+<body  onscroll="trigger(event)">
+
+
+    <style>
+        div{
+            transition: all 0.3s;
+        }
+    </style>
+
+    <div id="navbar1" class="p-3 navbar sticky-top">
+        <h1>sdfghjkl;</h1>
+    </div>
+
+    <div id="box" class="p-5 bg-danger" style="width: 200px;"></div>
+    <!-- <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quae ab hic labore. Debitis, dolores est?</h1> -->
+   <br><br><br>
+   
+    <input class="form-control w-50 mx-auto" type="text" name="" id="message" onkeyup="trigger(event)">
+
+    <div id="chats">nn </div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+    // function trigger(event) {
+
+    //     // console.log(event);
+    //     // console.table(event)
+    //     console.dir(event)
+    //     if (event.keyCode == 13) {
+    //         document.getElementById('chats').innerHTML += `
+    //         <p class= alert alert-success m-3>${document.getElementById('message').value} </p>
+         
+    //         `
+    //         document.getElementById('message').value = " "
+    //     }
+    // }
+
+
+    // ============= keycode with keyboard ========
+
+
+   function tigger(event) {
+       
+
+       if (event.keyCode == 37) {
+           document.getElementById('box').style.transform = `translateX(-200px)`;
+       }else if (event.keyCode == 30){
+        document.getElementById('box').style.transform = `translateX(200px)`;
+       }else if (event.keyCode == 39){
+        document.getElementById('box').style.transform = `translateX(200px)`;
+       }else if (event.keyCode == 40){
+        document.getElementById('box').style.transform = `translateX(200px)`;
+
+       }
+   }
+
+
+
+
+    // ============= scroll event on navbar  ========
+
+    // function trigger(event) {
+    //     let nav = document.getElementById('navbar1');
+
+    //     if (window.scrollY > 300) {
+    //         nav.classList.add('bg-info')
+    //     } else {
+    //         nav.classList.remove('bg-info')
+
+    //     }
+    // }
+
+
+
+
+
+
+
+    <script>
+     
+
+    
+     let username = document.getElementById('username');
+     let email = document.getElementById('email');
+     let password = document.getElementById('password');
+ 
+ 
+ 
+     let obj = [ ];
+ 
+     function signUp() {
+       
+      obj.push({user_name: username.value, mail: email.value, Pword: password.value})
+      localStorage.setItem("data", JSON.stringify(obj));
+ 
+ 
+    
+     }
+ 
+ 
+     function login() {
+     const storednamed = localStorage.getItem('username');
+     const storedemail = localStorage.getItem('email');
+     const storedpassword = localStorage.getItem('password');
+ 
+    let obj = localStorage.getItem('data');
+    let data = JSON.parse(obj);
+ //    console.log(data,name);
+ 
+    if (username.value !== storednamed || email.value !== storedemail || password.value !== storedpassword) {
+     document.getElementById('chats').innerHTML += `
+       <p class= bg-danger m-3 style = "color: white; border-radius: 5px">  ERROR IN LOGGING IN </p>
+          
+           `
+           document.getElementById('chats').value = " ";
+    }else{
+     document.getElementById('chats').innerHTML += `
+       <p class= bg-success m-3 style = "color: white; border-radius: 5px"> SUCCESSFUL LOGIN </p>
+          
+           `
+    }
+ 
+     }
+ </script>
+</script>

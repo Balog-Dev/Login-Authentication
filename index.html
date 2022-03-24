@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="pname">
+    <input type="number" name="" id="price">
+    <button onclick="add()">add to</button>
+
+
+    <button onclick="adds()">send</button>
+    <button onclick="addr()">REceive</button>
+
+    <input type="text" name="" id="remove">
+    <button onclick="rremove()" >Remove</button>
+</body>
+</html>
+<script>
+        let men = [];
+
+
+    function add() {
+        let pname = document.getElementById('pname');
+        let price = document.getElementById('price');
+
+        men.push({product_name: pname.value, price: price.value})
+        localStorage.setItem("data", JSON.stringify(men))
+    }
+
+    // function adds() {
+    //     localStorage.setItem("data", JSON.stringify(men))
+
+    // }
+
+    // function addr(params) {
+    //     let men = localStorage.getItem('data');
+    //     let data = JSON.parse(men);
+    //       console.log(data,name);
+    // }
+
+    function rremove() {
+     let removeValue = document.getElementById('remove').value;
+     let output = localStorage.getItem("data")
+     let outputArr = JSON.parse(output)
+    //  console.log(outputArr);
+    //  console.log(removeValue)
+     outputArr.splice(removeValue-1,1)
+    //  console.log(outputArr);
+    // men.pop(men[" "])
+    localStorage.setItem("data", JSON.stringify(outputArr))
+
+
+    }
+
+
+
+
+</script>

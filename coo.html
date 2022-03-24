@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+
+</head>
+<body>
+
+<script>
+let call = [{last: 'kama', name: 'lola', age:10},{last: 'kama', name: 'lola', age:11},{last: 'zama', name: 'mola', age:18},{last: 'lama', name: 'bola', age:18},
+  {last: 'zion', name: 'tola', age: 20}];
+    
+
+// let locall = call.filter((element)=>{
+//   return element.age>=18
+// })
+
+// let locall = call.map((element)=>{
+//   return element.name+ " " +element.last
+// })
+
+let locall = call.find((element)=>{
+  return element.age>=18
+})
+
+// let locall= [1,3,4,7,9].reduce((val,old)=>{
+//   return val+old
+// })
+
+
+let come = "pinapple"
+
+
+
+function getArray(params) {
+    let even=params.filter(ele=>ele%2==0)
+    let old=params.filter(ele=>ele%2!==0)
+    return even.length>odd.length ? odd[0]:even[0]
+
+}
+
+getArray([2,4,6,8,5])
+
+
+
+
+</script>
+
+</html>

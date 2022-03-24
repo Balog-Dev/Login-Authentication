@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="kem()">mutiply</button>
+
+    <input id="lent" type="text">
+<button onclick="move()" >add</button>
+    <h1 id="men"></h1>
+    <div id="menx"> </div>
+
+    <h3 onclick="press()" id="check"></h3>
+ 
+    
+    
+</body>
+
+<script>
+
+//    let name = ['balogun', 'ridwan', 'temitope', 'nath', 'adewole', 'henshaw', 'Tzee'];
+//    let human = document.getElementById('menx')
+//    let show = document.getElementById('lent')
+   
+//    function kem() {
+//       name.forEach(function (params, i) {
+//       human.innerHTML+=`<h1>${i+1}  ${params} <button onclick='remove(${i})'>del</button>  </h1>`
+
+//     //   console.log(i+1, params);
+//    })
+
+
+//    }
+   
+//    function remove(j) {
+//         human.innerHTML= ' ';
+//          name.splice(j, 1)
+//          kem();
+         
+
+//       }
+
+//       function move() {
+//         // human.innerHTML= ' ';
+//         // name.push(show.value);
+//         if (show.value) {
+//             human.innerHTML= ' ';
+//             name.push(show.value)
+//         }
+//         else{
+//             return;
+//         }
+//         kem();
+
+//       }
+
+
+
+</script>
+
+<script>
+
+    // let tim =setInterval(timer,1000);
+
+    // function timer(){
+    //     console.log();(new date());
+    // }
+
+
+    // =============NUMBER COUNTING============
+    // let count =0;
+    // let tim = setInterval(timer, 1000);
+    // let come = document.getElementById('check')
+
+    // function timer() {
+    //     // console.log(count)
+    //     come.innerHTML += `${count++} `
+    //     // count++
+    //     if(count==31 ){
+    //         clearInterval(tim)
+    //     }
+    // }
+
+        // =============END NUMBER COUNTING============
+
+</script>
+
+<SCript>
+let words = ['my names are balogun ridwan temitope', 'i hail from kwara state offa local government ']
+let bom = setInterval(timer,100)
+let see = 0
+let come = document.getElementById('check')
+
+
+function timer() {
+    come.innerHTML+= `${words}`
+    if (words==0) {
+    clearInterval(bom)
+
+    }
+}
+
+    
+</SCript>
+</html>

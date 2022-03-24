@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+ <input type="text" id="key">
+<input type="text" id="text">
+<button onclick="show()" class="btn btn-success">store</button>
+
+
+<br><br><br>
+
+<input type="text" name="" id="key2">
+<button onclick="getItems()" class="btn btn-success">get items</button>
+
+</body>
+</html>
+
+<script>
+    //   ===============LOCAL STORAGE===========
+
+function show() {
+//    const key = document.getElementById('key');
+//    const text = document.getElementById('text');
+   localStorage.setItem(key.value, text.value)
+
+   let arr = ["samuel", "balogun", "ridwan", "john"];
+   let obj = {name: "balo", status: true}
+   localStorage.setItem("data", JSON.stringify(obj))
+
+}
+
+function getItems() {
+//    const key = document.getElementById('key2');
+//    let items = localStorage.getItem(key);
+
+   let items = localStorage.getItem('data')
+   let data = JSON.parse(items);
+   console.log(data,name);
+}
+
+
+</script>

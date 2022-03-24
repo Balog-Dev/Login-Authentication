@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-class</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+
+</head>
+<style>
+    input{
+        margin: 5px;
+    }
+</style>
+
+<body style="width: 100%;">
+
+  
+    
+<div>
+
+    <button id="copy"  onclick="add()" style="background-color: blue; color: white;">click me please</button>
+    
+
+
+  <div style="margin-top: 20px;">
+
+   <input type="text" id="temp1">
+   <input  type="text" id="temp2">
+   <input type="text" id="temp3">
+   <input type="text" id="temp4">
+  
+  </div>
+
+  <div>
+      <input oninput="sex()"  id="ment" style="width: 200px; height: 100px;"  type="text" >
+  </div>
+
+
+
+
+  <div class="card" style="width: 400px; margin-left: 240px; margin-bottom: 40px;">
+      <div class="container">
+          <h3>Task List</h3>
+
+          <input style="border: none; overflow: hidden;" type="text" placeholder="walk the Dog">
+          <hr style="width: 200px;">
+          <button style="background-color: darkcyan; color: white; border: none; margin-bottom: 20px;">ADD TASK</button>
+          <h4>Task</h4>
+
+          <div class="card body">
+            <tbody>
+                
+              </tbody >
+              <tbody >
+                <tr>
+                    <p style="padding-left: 10px; ">Items</p>
+
+                  <hr>
+                 
+                </tr>
+                <tr>
+                  <p>Items</p>
+                
+                  <hr>
+                </tr>
+                <tr>
+                    <p>Items</p>
+                  <hr>
+                </tr>
+                <tr>
+                    <p>Items</p>
+
+                  <hr>
+                </tr>
+                <tr>
+                    <p>Items</p>
+
+                  <hr>
+                </tr>
+                <tr>
+                    <p>Items</p>
+
+                  <hr>
+                </tr>
+      
+              </tbody>
+            </table>          
+          </div>
+      </div>
+  </div>
+
+  <button onclick="pop()" style="background-color: red;color: white; border: none;">click</button>
+
+  <input  type="text" name="" id="come">
+  <h1 id="head" style="width: 100%; height: 80px; background-color: blue; color: white;"></h1>
+
+
+</body>
+    <script>
+        // var temmy =2; ES5
+        // let temmy = 2; ES6
+
+        // Naming convention
+        // let firstName= 'temmy'; camel Casing 
+        // let first_name= 'temmy' snake casing
+
+        // Data types 
+        //  let c="temmy"; STRING 
+        //  let a=["TESLIM", "RIDWAN", "HENSHAW"]; Array 
+        //  let d={name:"teslim", name:"tope"}; OBJECT 
+
+        // //  Array of object
+        // let arr=[{name:"teslim", name:"abiola"}];
+        // console.log(arr[0].name);
+    // let m=5!=5 || 10<20 &&  30==30 || 4>7 || '4'>=4
+    //    let m=5!=5
+    // alert(m)
+
+    // function hello(names, money=0) {
+    //     alert(`Hello ${names}, please take this ${money}`)
+    //     // alert('Greetings ' +names+ ' please take this ' +money)
+        
+    // }
+    
+    // hello('temmy',100)
+    // hello('Abu')
+    // hello('Tolu')
+
+
+//   function add(a,b,c,d,e) {
+    
+//     let sum = a+b+c+d-e
+
+//      console.log(sum)
+//   }
+//     add(1000, 2000, 3000, 4000, 100)
+
+// IF STATEMENT
+
+// const id = 400;
+// if(id==400) {
+//   console.log('CORRECT')
+// }else{
+//     console.log('INCORRECT')
+// }
+
+
+// function addSum(x,y) {
+//   let all = x+y 
+//   console.log(all)
+// }
+// addSum(290, 300)
+
+
+// function hello(names, money=0){
+    // console.log(`hello ${names}, please buy me bag ${money}`)
+    // document.getElementById('comp').value=5000;
+    // comp.value=2000
+    // let val=comp.valueval=1000;
+
+    // val++;
+    // alert(val)
+
+    // let val=comps.value
+    // val=1000
+    // comp.value+=val;
+    // alert(val++)
+    // alert(++val)
+
+// }
+
+
+// function hello(){
+//     let val= temp2.value=temp1.value
+//     temp1.value=(' ')
+//     copy.innerHTML='copy'
+
+
+// }
+//    let check = document.getElementById('temp1')
+
+//       function ok(){
+//            let myfirstvalue = check.value
+//            let oncheck= document.getElementById('temp2')
+//            oncheck.value= myfirstvalue 
+          
+//       }
+   
+
+
+            //   function add(){
+            //   let call =Number(document.getElementById('temp1').value)
+            //   let pick =document.getElementById('temp2')
+            //   let go =Number(document.getElementById('temp3').value)
+            //   let check = document.getElementById('temp4')
+        
+
+
+            //   if(pick.value=="+"){
+            //     check.value=call + go
+            //   }
+            //   else if(pick.value=="*"){
+            //        check.value=call * go
+            //   }
+            //   else if (pick.value=="-"){
+            //         check.value=call - go
+            //   }
+            //   else if(pick.value=="/"){
+            //       check.value=call / go
+            //   }
+
+
+        //   }
+
+        //   let =20;
+        //   if(a==2){
+        //       console.log('a==')
+        //   }
+        //   else if(a>=20){
+        //       console.log('A>==')
+        //   }
+        //   else if(a=20){
+        //       console.log('A==')
+        //   }
+        //   else {
+        //       console.log('HEY! something went wrong')
+        //   }
+
+
+
+
+
+    // hello( 'tolu', 1000)
+    // hello( 'toxin' )
+    // hello( 'ope')
+
+
+    // STRING METHOD
+    let string = "balogun, tem,rent, ridwan";
+    //  console.log(string.length)
+    //  console.log(string.replace('b'), ('w'))
+
+    //  console.log(string.toUpperCase())
+    // console.log(string.search('g'))
+    // console.log(string.slice(-5))
+
+    // save the slice to a var 
+    // let r= string.slice(4)
+    // console.log(string.split(','))
+
+    // changing a string to number
+
+    // let string ='12345678';
+
+    // console.log(parseInt(string))
+
+    // let string ='12.3';
+    // console.log(parseFloat(string))
+
+
+    //  function sex(){
+    //      let men = document.querySelector('#ment');
+    //      men.value = men.value.replace('sex', 'gender');
+        
+         
+    //  }
+    //  function sex(){
+    //      let wo = document.querySelector('#ment')
+    //      wo.value = wo.value.replace('boy', 'men')
+    //      wo.value = wo.value.replace('sex', 'gender')
+    //      wo.value = wo.value.replace('girl', 'woman')
+    //      wo.value = wo.value.replace('apartment', 'house',)
+     
+
+
+
+
+        //  if (sex === boy){
+        //      wo.value = wo.value.replace('boy', 'men')
+        //  }
+        //  else if (sex === gender){
+        //      let sex = document.querySelector('#ment')
+        //      wo.value = wo.value.replace('sex', 'gender')
+        //  }
+    //  }
+
+
+    //  ARRAY METHODS
+//      let darray = ['teslim',23,3,null,90];
+//      let objs={name:'teslim', age:10,email:'email.com', hobbies:['code','swimming','sleep']};
+
+// let arr=[2,5,6,7,'mango',true, function(data){log(data)},null, undefined,{name:'teslim'}]
+//      arr.push('apple')
+//      arr.pop()
+//      arr.shift()will remove from the beginging
+//      arr.unshift('cashew') will add to the arr
+//      arr.sort() helps to sort or arrange 
+//      arr.splice(0,4)
+
+//      let dd= arr.join('==')
+//      console.log(dd)
+
+
+//      function hello({email,name}){
+//        console.log(email, name)
+//      }
+
+//      hello(objs)
+
+
+
+     let arr=[1,2,3,'man', {name:'ridwan'}];
+    //  let shop = ['apple','orange','melon','water','cup', 'rat','computer', 'aeroplane', 'laptop']
+  
+     function pop(){
+     
+    //  input.innerHTML = arr.push(had.value)
+
+      // input=mom.push(input);
+      // key= mom.join(',')
+
+
+
+ 
+
+
+
+      let input= document.getElementById('come').value;
+     let had = document.getElementById('head')
+
+    //   if (input>7) {
+    //     alert('error')
+    //     had.innerHTML= "";
+        
+    //     }
+    //     else{      
+    //  key=mom.splice(input,1)
+    //   had.innerHTML= mom
+    //     }
+      
+
+    //  }
+    //  console.log(mom);
+
+
+
+    //  loop initiation
+    //  for (let index = 0; index < 10;  index++) {
+       
+    //    console.log(index)
+
+
+    </script>
+
+  
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur, asperiores accusamus repellendus soluta laborum! Saepe delectus sunt quos voluptatum harum? Accusamus molestiae perspiciatis doloribus quam dolor sequi nisi qui?
+    </h1>
+
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestiae ad voluptatem impedit natus, doloribus voluptatum.
+    </span>
+
+
+    <div>
+        <ul>
+            <li>house</li>
+            <li>computer</li>
+            <li>opera</li>
+            <li>station</li>
+            <li>long</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let val;
+  val = document;
+  val = document.all;
+  val = document.head;
+  val = document.links;
+  val = document.doctype;
+  val = document.body;
+  val = document.location;
+  val = document.URL;
+
+
+
+    console.log(val);
+
+
+    document.getElementById('test').style.background = 'red';
+    document.getElementById('test').style.color = 'blue';
+    // document.getElementById('test').style.display = 'none';
+    document.getElementById('test').textContent = 'hello';
+    document.getElementById('test').innerText = 'love';
+
+    document.querySelector('li').style.color = 'yellow';
+    document.querySelector('li:last-child').textContent = 'jupiter';
+    document.querySelector('li:nth-child(3)').style.background = 'purple';
+
+
+
+    let name = ['bolu', 'biola', 'kola', ]
+
+    name.forEach(function (params, i) {
+        name.innerHTML
+    });
+
+</script>
+
+</html>

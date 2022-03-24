@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.1-dist/css/bootstrap.css">
+</head>
+<style>
+   .circle{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: aqua;
+   }
+
+   .special-color{
+      width: 300px;
+      background-color: orange;
+      color: white;
+      border-radius: 0px 30px 30px 30px;
+   }
+</style>
+<body>
+<h1  id="traffic">welcome to traffical</h1>
+
+<div id="fic" class="circle">
+
+</div>
+
+<!-- <button class="btn btn-success" onclick="document.getElementById('traffic').innerText='You can go';document.getElementById('traffic').style.color= 'green';document.getElementById('fic').style.background= 'green'">start</button>
+<button class="btn btn-warning" onclick="document.getElementById('traffic').innerText='Move on';document.getElementById('traffic').style.color= 'yellow';document.getElementById('fic').style.background= 'yellow'" >get ready</button>
+<button class="btn btn-danger" onclick="document.getElementById('traffic').innerText='You can stop';document.getElementById('traffic').style.color= 'red';document.getElementById('fic').style.background= 'red'">stop</button> -->
+
+<button onclick="start()" class="btn btn-success">start</button>
+<button onclick="ready()" class="btn btn-warning">get ready</button>
+<button onclick="stop()" class="btn btn-danger">stop</button>
+<button onclick="add()" class="btn btn-dark">stop</button>  
+<button onclick="remove()" class="btn btn-primary">stop</button>
+<button onclick="toggle()" class="btn btn-secondary">stop</button>
+
+
+<br><br><br>
+<input type="text" placeholder="input Month" id="input1">
+<button onclick="months()">click to get month</button>
+<h1 >month: <span id="month"></span></h1>
+<h1>day: <span id="day"></span></h1>
+
+
+<input type="text" placeholder="input day" id="input2">
+<button onclick="days()">click to get day</button>
+
+<audio id="music" src="Joeboy-Alcohol.mp3"></audio>
+   <h1 id="toe">programming is</h1>
+   <h1 id="num">hello</h1>
+
+   <input type="time" value="" id="tem">
+   <button id="pit" onclick="show()">show time</button>
+<br>
+<br><br>
+
+
+
+
+
+
+
+<div style="display: flex; margin-left: 10%; ">
+   <div contenteditable="true" id="hrs">:</div>
+   <div contenteditable="true" id="min">:</div>
+   <div contenteditable="true" id="sec"></div>
+   <br><br>
+   <button class="btn btn-success" onclick="click()">start</button>
+</div>
+
+
+
+
+<br><br>
+
+
+
+
+</body>
+
+ <script>
+let boot1 = document.getElementById('hrs');
+let boot2 = document.getElementById('min');
+let boot3 = document.getElementById('sec');
+let song = document.getElementById('music');
+    
+function my1() {
+    let  hours = new Date()
+    boot1.innerHTML= hours.getHours()
+
+    let minute = new Date()
+    boot2.innerHTML=minute.getMinutes()
+
+    let second = new Date()
+    boot3.innerHTML= second.getSeconds()
+
+   //  if (view6.value == veiw1.innerHTML && view7.value == veiw2.innerHTML) {
+   //      sound.play()
+   //      console.log(33);
+   //      view8.innerHTML=view9.value
+   //  }
+   //  if (view7.value < veiw2.innerHTML){
+   //      sound.pause()
+   //  }
+
+};
+
+my1()
+setInterval(my1, 1000)
+
+   //     let shop = ['apple','orange','melon','water','cup', 'rat','computer', 'aeroplane', 'laptop'];
+
+   //     let text = " ";
+   //     for (let index = 0; index < shop.length; index++) {
+   //     text += shop[index] + "<br>";  
+
+   //     text += "011" + " " + shop[index] + "<br>"
+   //   }
+   //  document.getElementById('lott').innerHTML= text;
+   
+//    //==============FOR LOOP FUNCTION===========
+
+
+   // function add(){
+   //    let cup = Number(document.getElementById('lent').value);
+   //    let num = Number(document.getElementById('write').value);
+   //    let top = document.getElementById('head');
+   //    // console.log(num, cup);
+   //    for (let i=num; i <cup; i++) {
+   //       // console.log(num, cup);
+   //       for(let index=1; index < 13; index++){ 
+   //           top.innerHTML+=`${i} x ${index}= ${i * index} <br>`
+   //          //  console.log(top);
+
+   //         }
+   //         top.innerHTML+=`<p></p> <br> ` 
+         
+   //    }
+      
+   // }
+
+   //==============FOR EACH FUNCTION===========
+
+   // let fruit =['mango', 'orange', 'melon', 'banana', 'apple', 'pawpaw']
+
+
+   // fruit.forEach(function (params, index) {
+   //    console.log(index+1,params);
+   // })
+
+      
+   let month=['january', 'febuary', 'march', 'april', 'may', 'june', 'july','august', 'september', 'october', 'november', 'december']
+   let day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+   let date = new Date();
+
+            
+
+   function months() {
+      let tol = input1.value
+      document.getElementById('month').innerText=month[tol-1]
+   }
+
+   function days() {
+      let tol1 = input2.value
+      document.getElementById('day').innerText=day[tol1-1]
+   }
+   
+
+   
+  let low = document.getElementById('toe').innerHTML
+  let poll = `${low} good & lovely  `
+   learn = document.getElementById('toe').innerText = poll
+  console.log(poll);
+
+  let song = document.getElementById('music');
+  let home = document.getElementById('tem').value
+
+ function show() {
+    if (home.value == home.value) {
+ 
+      song.play()
+    }
+ }
+
+
+
+
+ function start(params) {
+   document.getElementById('traffic').innerText='You can go';
+   document.getElementById('traffic').style.color= 'green';
+   document.getElementById('fic').style.background= 'green';
+ }
+
+ function ready(params) {
+   document.getElementById('traffic').innerText='Move on';
+   document.getElementById('traffic').style.color= 'yellow';
+   document.getElementById('fic').style.background= 'yellow';
+ }
+
+ function stop(params) {
+   document.getElementById('traffic').innerText='You can stop';
+   document.getElementById('traffic').style.color= 'red';
+   document.getElementById('fic').style.background= 'red';
+ }
+ 
+ function add(params) {
+    document.getElementById('traffic').classList.add('special-color')
+ }
+ function remove(params) {
+    document.getElementById('traffic').classList.remove('special-color')
+    console.log(remove);
+ }
+ function toggle(params) {
+    document.getElementById('traffic').classList.toggle('special-color')
+    console.log(toggle);
+ }
+
+
+
+
+
+
+    </script>
+</html>
