@@ -119,50 +119,8 @@
 
 
 
-    <script>
+    
      
 
     
-     let username = document.getElementById('username');
-     let email = document.getElementById('email');
-     let password = document.getElementById('password');
- 
- 
- 
-     let obj = [ ];
- 
-     function signUp() {
-       
-      obj.push({user_name: username.value, mail: email.value, Pword: password.value})
-      localStorage.setItem("data", JSON.stringify(obj));
- 
- 
-    
-     }
- 
- 
-     function login() {
-     const storednamed = localStorage.getItem('username');
-     const storedemail = localStorage.getItem('email');
-     const storedpassword = localStorage.getItem('password');
- 
-    let obj = localStorage.getItem('data');
-    let data = JSON.parse(obj);
- //    console.log(data,name);
- 
-    if (username.value !== storednamed || email.value !== storedemail || password.value !== storedpassword) {
-     document.getElementById('chats').innerHTML += `
-       <p class= bg-danger m-3 style = "color: white; border-radius: 5px">  ERROR IN LOGGING IN </p>
-          
-           `
-           document.getElementById('chats').value = " ";
-    }else{
-     document.getElementById('chats').innerHTML += `
-       <p class= bg-success m-3 style = "color: white; border-radius: 5px"> SUCCESSFUL LOGIN </p>
-          
-           `
-    }
- 
-     }
  </script>
-</script>
